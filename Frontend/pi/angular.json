@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PI-delAguila": {
+    "pi": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pi-del-aguila",
+            "outputPath": "dist/pi",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PI-delAguila:build:production"
+              "browserTarget": "pi:build:production"
             },
             "development": {
-              "browserTarget": "PI-delAguila:build:development"
+              "browserTarget": "pi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PI-delAguila:build"
+            "browserTarget": "pi:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "179e6b7a-3016-4480-9cfd-9a36f263eaca"
+    "analytics": "a67803d2-a271-4f42-980e-8e2532bfa5bd"
   }
 }
